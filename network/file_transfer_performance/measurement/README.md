@@ -11,7 +11,7 @@ At a minimum for a file transfer to perform well it requires
 
 - the source storage system have adequate read performance
 - the sending device that transmits data into the network needs to be adequately configured
-- the network speed between the sending device and the receiving device needs to be sufficient
+- the network speed over the transfer network between the sending device and the receiving device needs to be sufficient
 - the receiving device that consumes from the network needs to be adequately configured
 - the sink storage system have adequare write performance
 
@@ -25,11 +25,11 @@ The basic model that these examples were created for is a setup shown below.
 
 ```
 
-  Source
-  storage
+  Source                Sending                Transfer
+  storage               device                 network
    ---
- (     )       --------------
-  |   |  .....|              |
-  |   |        --------------
+ (     )             --------------   
+  |   |  ---....----|              |  <===================||=============>
+  |   |              --------------
   -----
 ```
