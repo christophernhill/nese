@@ -57,3 +57,5 @@ $ kill -USR1 $pid
 
 etc...
 
+Although trivial this is useful as it shows for this file system, a single threaded transfer
+has a moximum performance of 230MB/s or 1.8Gb/s. 
