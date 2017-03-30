@@ -25,11 +25,11 @@ The basic model that these examples were created for is a setup shown below.
 
 ```
 
-  Source                Sending                Transfer                 Receiving                        Sink
-  storage               device                 network                  device                           storage
+  Source                Sending          Transfer        Receiving                        Sink
+  storage               device           network         device                           storage
    ---
- (     )             --------------                                 ---------------------
-  |   |  ---....----|              |  <===========||=============> |                     |----.....----
-  |   |              --------------                                 ---------------------
+ (     )             --------------                 ---------------------
+  |   |  ---....----|              |  <===| |====> |                     |----.....----
+  |   |              --------------                 ---------------------
   -----
 ```
