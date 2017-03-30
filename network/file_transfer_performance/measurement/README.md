@@ -84,7 +84,8 @@ multi-transfer performance was a little lower in aggregate than a single transfe
 12582912000 bytes (13 GB) copied, 118.999 s, 106 MB/s
 ```
 The transfer performance is likely to be fairly variable on any shared system, but
-nevertheless these numbers are useful on providing some guidance for expectations.
+nevertheless these numbers are useful on providing some guidance for expectations and bottleneck
+locations.
 
 
 
