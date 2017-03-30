@@ -38,3 +38,6 @@ the examples show useful ways to check the transfer setup for each of the sectio
 ```Sending device -> Receving device```, ```Receving device -> Sink storage```.
 
 ## Source storage -> Sending device
+
+For this pathway the Linux command dd can be used to test read transfers from the ```Source storage``` to in memory
+
