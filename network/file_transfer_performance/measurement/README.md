@@ -68,7 +68,7 @@ to the sending device memory has a maximum performance of 230MB/s or 1.8Gb/s. Th
 that a faster system for transfering (for example parallel reads``` from the ```Source storage```)
 would need to be in place in order saturate a modern 10Gb/s network (let alone a 100Gb/s network).
 
-If there are multiple files to be transferred then creating a file, ```FOO``, with contents
+If there are multiple files to be transferred then creating a file, ```FOO```, with contents
 ```
 dd if=tar000141.tar ibs=120M obs=12M count=100 | dd of=/dev/null bs=12M & pid1=$!
 dd if=tar000140.tar ibs=120M obs=12M count=100 | dd of=/dev/null bs=12M & pid2=$!
