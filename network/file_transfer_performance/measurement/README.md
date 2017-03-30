@@ -36,3 +36,5 @@ The basic model that these examples were created for is a simple setup as shown 
 
 the examples show useful ways to check the transfer setup for each of the section ```Source storage -> Sending device```,
 ```Sending device -> Receving device```, ```Receving device -> Sink storage```.
+
+## ```Source storage -> Sending device```
