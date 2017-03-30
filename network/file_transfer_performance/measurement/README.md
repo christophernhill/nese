@@ -39,5 +39,21 @@ the examples show useful ways to check the transfer setup for each of the sectio
 
 ## Source storage -> Sending device
 
-For this pathway the Linux command dd can be used to test read transfers from the ```Source storage``` to in memory
+For this pathway the Linux command dd can be used to test read transfers from the ```Source storage``` to memory in the ```Sending device``. A real example of this is
+
+```
+$ bash
+$ dd if=tar000141.tar ibs=120M obs=12M count=100 | dd of=/dev/null bs=12M & pid=$!
+```
+wait a little time
+```
+$ kill -USR1 $pid
+```
+```
+710+0 records in
+710+0 records out
+8933867520 bytes (8.9 GB) copied, 38.8305 s, 230 MB/s
+```
+
+etc...
 
