@@ -17,6 +17,10 @@ At a minimum for a file transfer to perform well it requires
 
 Files in this directory provide examples of how to measure performance for these pieces on a Linux system. The
 files contain examples for measureing each piece in isolation and for measuring various sub-combinations of
-the full end-to-end flow. The basic model that these examples were created for is a setup shown below.
+the full end-to-end flow. 
+
+## Basic model
+
+The basic model that these examples were created for is a setup shown below.
 
 
