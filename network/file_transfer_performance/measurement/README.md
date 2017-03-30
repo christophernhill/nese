@@ -21,7 +21,7 @@ the full end-to-end flow.
 
 ## Basic model
 
-The basic model that these examples were created for is a setup shown below.
+The basic model that these examples were created for is a simple setup as shown below.
 
 ```
 
@@ -33,3 +33,6 @@ The basic model that these examples were created for is a setup shown below.
   |   |              --------------                 ---------------------                 |    |
   -----                                                                                   ------
 ```
+
+the examples show useful ways to check the transfer setup for each of the section ```Source storage -> Sending device``,
+```Sending device -> Receving device```, ```Receving device -> Sink storage```.
