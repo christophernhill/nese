@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Print stats for an interface at a regular interval
+# Print stats for an interface at a regular interval.
 #
 # cat /proc/net/dev | grep p3p1
 #
