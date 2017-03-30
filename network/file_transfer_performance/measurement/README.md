@@ -1,4 +1,4 @@
-# Material for checking basic network and storage performace
+# Material for checking basic network and storage performace for file transfer
 
 ## Overview
 
