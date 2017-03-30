@@ -15,6 +15,9 @@
 # $10 - pkts transmitted
 # $11 - pkts transmitted
 #
+bold()          { ansi 1 "$@"; }
+ansi()          { echo -e "\e[${1}m${*:2}\e[0m"; }
+
 dfile=/proc/net/dev
 ifname=p3p1
 psecs=3
@@ -48,6 +51,7 @@ bpprx=`echo ${drxb}"/"${drxp} | bc -l`;bpprx=`printf "%.1f" ${bpprx}`
 brtxMiB=`echo ${dtxb}"/("${psecs}"*1.*1024.*1024.)" | bc -l `; brtxMiB=`printf "%-10.3f" ${brtxMiB}`
 prtxPPS=`echo ${dtxp}"/("${psecs}"*1.)" | bc -l `; prtxPPS=`printf "%-10.1f" ${prtxPPS}`
 bpptx=`echo ${dtxb}"/"${dtxp} | bc -l`;bpptx=`printf "%.1f" ${bpptx}`
-echo ${ifname}"," ${psecs}"s sample: " \
-     ${drxb}"b ("${drxp}"p) RX @ "${brrxMiB}"MiB/s ("${prrxPPS}"p/s @ "${bpprx}"b/p)," \
-     ${dtxb}"b ("${dtxp}"p) TX @ "${brtxMiB}"MiB/s ("${prtxPPS}"p/s @ "${bpptx}"b/p)."
+echo ${ifname}","${psecs}"s," \
+     $(bold 'RX')','${drxb}"b,"${drxp}"p,"$(bold ${brrxMiB}"MiB/s ")","${prrxPPS}"p/s,"${bpprx}"b/p," \
+     $(bold 'TX')','${dtxb}"b,"${dtxp}"p,"$(bold ${brtxMiB}"MiB/s ")","${prtxPPS}"p/s,"${bpptx}"b/p" \
+     ${secs0}","${secs1}
