@@ -23,17 +23,10 @@ the full end-to-end flow.
 
 The basic model that these examples were created for is a setup shown below.
 
-
-<pre>
-             ,-. 
-    ,     ,-.   ,-. 
-   / \   (   )-(   ) 
-   \ |  ,.>-(   )-< 
-    \|,' (   )-(   ) 
-     Y ___`-'   `-' 
-     |/__/   `-' 
-     | 
-     | 
-     |    -hrr- 
-  ___|_____________ 
-</pre>
+```
+   ,_.
+  (   )
+  |   |
+  |   |
+  -----
+```
