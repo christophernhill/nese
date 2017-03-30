@@ -37,6 +37,12 @@ The basic model that these examples were created for is a simple setup as shown 
 the examples show useful ways to check the transfer setup for each of the section ```Source storage -> Sending device```,
 ```Sending device -> Receving device```, ```Receving device -> Sink storage```.
 
+The overall end-to-end transfer speed is unlikely to be much faster than the transfer speed of
+the slowest intermediate step. So the examples here can be useful to determine which elements of the
+system need to be improved to improve overall performance. Often their is a tendency to assume
+that network upgrades will fix any unsatisfactory performance. The examples here can be used
+to determine whether that is the needed and whether it is sufficient. 
+
 ## Source storage -> Sending device
 
 For this pathway the Linux command dd can be used to test read transfers from the ```Source storage``` to memory in the ```Sending device``. A real example of this is
@@ -80,6 +86,5 @@ multi-transfer performance was a little lower in aggregate than a single transfe
 The transfer performance is likely to be fairly variable on any shared system, but
 nevertheless these numbers are useful on providing some guidance for expectations.
 
-The end-to-end transfer speed is unlikely to be much faster than the transfer speed of
-the slowest intermediate step. 
+
 
