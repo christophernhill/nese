@@ -58,4 +58,28 @@ $ kill -USR1 $pid
 etc...
 
 Although trivial this is useful as it shows for this file system, a single threaded transfer
-has a moximum performance of 230MB/s or 1.8Gb/s. 
+to the sending device memory has a maximum performance of 230MB/s or 1.8Gb/s. This suggests
+that a faster system for transfering (for example parallel reads``` from the ```Source storage```)
+would need to be in place in order saturate a modern 10Gb/s network (let alone a 100Gb/s network).
+
+If there are multiple files to be transferred then creating a file, ```FOO``, with contents
+```
+dd if=tar000141.tar ibs=120M obs=12M count=100 | dd of=/dev/null bs=12M & pid1=$!
+dd if=tar000140.tar ibs=120M obs=12M count=100 | dd of=/dev/null bs=12M & pid2=$!
+```
+for example and then invoking the commands together
+```
+$ source FOO
+```
+can test the effectiveness of parallel transfers. In the particular case tested, the
+multi-transfer performance was a little lower in aggregate than a single transfer
+```
+12582912000 bytes (13 GB) copied, 119.012 s, 106 MB/s
+12582912000 bytes (13 GB) copied, 118.999 s, 106 MB/s
+```
+The transfer performance is likely to be fairly variable on any shared system, but
+nevertheless these numbers are useful on providing some guidance for expectations.
+
+The end-to-end transfer speed is unlikely to be much faster than the transfer speed of
+the slowest intermediate step. 
+
