@@ -41,7 +41,8 @@ The overall end-to-end transfer speed is unlikely to be much faster than the tra
 the slowest intermediate step. So the examples here can be useful to determine which elements of the
 system need to be improved to improve overall performance. Often their is a tendency to assume
 that network upgrades will fix any unsatisfactory performance. The examples here can be used
-to determine whether that is the needed and whether it is sufficient. 
+as a way to understand performance variations and as a pre-check to establish a baseline on 
+whether and where network upgrades are warranted. 
 
 ## Source storage -> Sending device
 
