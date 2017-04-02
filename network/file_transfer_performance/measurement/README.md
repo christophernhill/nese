@@ -91,11 +91,11 @@ locations.
 
 ## Useful references
 
-http://fasterdata.es.net/host-tuning/
+
 
 | Description        | Reference  |
 | ------------- |-------------| 
-| ESnet web pages describing Linux network parameter tuning   | http://fasterdata.es.net/host-tuning/ |
+| ESnet web pages describing Linux network parameter tuning <br> for long distance network transfers.  | http://fasterdata.es.net/host-tuning/ |
 
 
 
