@@ -1,0 +1,1 @@
+- Testing notes for Docker demo of Luminous
