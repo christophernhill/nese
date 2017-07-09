@@ -30,3 +30,8 @@ systemctl start docker
 docker run hello-world
 
 ```
+
+
+```
+docker run -d --name demo -e MON_IP=0.0.0.0 -e CEPH_PUBLIC_NETWORK=0.0.0.0/0 --net=host -v /var/lib/ceph:/var/lib/ceph -v /etc/ceph:/etc/ceph -e CEPH_DEMO_UID=qqq -e CEPH_DEMO_ACCESS_KEY=qqq -e CEPH_DEMO_SECRET_KEY=qqq -e CEPH_DEMO_BUCKET=qqq ceph/daemon demo
+```
